@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 // Allow requests from your frontend
 app.use(cors({
-    origin: 'http://127.0.0.1:5501',
+    origin: 'https://portfolio-mohid.netlify.app',
     credentials: true
   }));
 
