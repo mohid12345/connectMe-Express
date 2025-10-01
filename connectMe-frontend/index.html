@@ -21,10 +21,10 @@
             <a class="logo" href="#">Portfolio</a>
             <ul class="nav">
                 <li class="item">
-                    <a class="link" href="#home">Home</a>
+                    <a class="link" href="#home">Home</a> 
                 </li>
                 <li class="item">
-                    <a class="link" href="#about">About</a>
+                    <a class="link" href="#about">About </a> 
                 </li>
                 <li class="item">
                     <a class="link" href="#portfolio">Portfolio</a>
@@ -246,7 +246,8 @@
                     const data = Object.fromEntries(formData.entries());
             
                     try {
-                        const response = await fetch('https://connectme-express.onrender.com/contact', {
+                        // const response = await fetch('https://connectme-express.onrender.com/contact', {
+                        const response = await fetch('http://localhost:3000/contact', {
                             method: 'POST',
                             headers: { 'Content-Type': 'application/json' },
                             body: JSON.stringify(data),

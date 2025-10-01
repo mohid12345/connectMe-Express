@@ -13,7 +13,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 // Allow requests from your frontend
 app.use(cors({
-    origin: 'https://portfolio-mohid.netlify.app',
+    // origin: 'http://localhost:5501',
+     origin: ['http://localhost:5501', 'http://localhost:3000', 'https://portfolio-mohid.netlify.app', 'https://www.mohidmohan.shop'],
     credentials: true
   }));
 
